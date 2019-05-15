@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+    id 'eclipse-wtp'
+    id 'war'
+}
+
+group 'uce.edu'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'javax.servlet', name: 'javax.servlet-api', version: '4.0.1'
+    compile group: 'javax.servlet.jsp', name: 'javax.servlet.jsp-api', version: '2.3.3'
+    compile group: 'org.apache.openjpa', name: 'openjpa-persistence-jdbc', version: '3.1.0'
+    compile group: 'org.apache.openjpa', name: 'openjpa', version: '3.1.0'
+    compile group: 'postgresql', name: 'postgresql', version: '9.1-901-1.jdbc4'
+    compile group: 'jstl', name: 'jstl', version: '1.2'
+}

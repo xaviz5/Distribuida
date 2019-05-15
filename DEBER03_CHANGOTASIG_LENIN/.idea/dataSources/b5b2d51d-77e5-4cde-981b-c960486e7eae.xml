@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="distribuida/OpenJPA">
+  <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.15">
+    <root id="1">
+      <ServerVersion>9.5.17</ServerVersion>
+    </root>
+    <database id="2" parent="1" name="basePersona">
+      <ObjectId>16405</ObjectId>
+      <StateNumber>622</StateNumber>
+      <Owner>postgres</Owner>
+      <IntrospectionStateNumber>627</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Relations>sequence|table|16406|16408|1
+</Relations>
+    </database>
+    <database id="3" parent="1" name="postgres">
+      <ObjectId>12373</ObjectId>
+      <Comment>default administrative connection database</Comment>
+      <StateNumber>614</StateNumber>
+      <Owner>postgres</Owner>
+    </database>
+    <role id="4" parent="1" name="postgres">
+      <ObjectId>10</ObjectId>
+      <SuperRole>1</SuperRole>
+      <Inherit>1</Inherit>
+      <CreateRole>1</CreateRole>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+      <ConnectionLimit>-1</ConnectionLimit>
+      <Replication>1</Replication>
+      <BypassRls>1</BypassRls>
+    </role>
+  </database-model>
+</dataSource>
